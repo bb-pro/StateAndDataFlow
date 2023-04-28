@@ -6,18 +6,25 @@
 //
 
 import Foundation
+import Combine
 
-final class TimeCounter {
+final class TimeCounter: ObservableObject {
     var counter = 3
-    var timer: Timer?
+    var buttonTitle = "Start"
+    let objectWillChange = ObservableObjectPublisher()
+    private var timer: Timer?
     
     func startTimer() {
-        timer = Timer.scheduledTimer(
-            timeInterval: 1,
-            target: self,
-            selector: #selector(updateCounter),
-            userInfo: nil,
-            repeats: true)
+        if counter > 0 {
+            timer = Timer.scheduledTimer(
+                timeInterval: 1,
+                target: self,
+                selector: #selector(updateCounter),
+                userInfo: nil,
+                repeats: true
+            )
+        }
+        buttonDidTapped()
     }
     
     @objc private func updateCounter() {
@@ -26,10 +33,24 @@ final class TimeCounter {
         } else {
             killTimer()
         }
+        
+        objectWillChange.send()
+    }
+    
+    private func buttonDidTapped() {
+        if buttonTitle == "Reset"{
+            counter = 3
+            buttonTitle = "Start"
+        } else {
+            buttonTitle = "Wait..."
+        }
+        
+        objectWillChange.send()
     }
     
     private func killTimer() {
         timer?.invalidate()
         timer = nil
+        buttonTitle = "Reset"
     }
 }
