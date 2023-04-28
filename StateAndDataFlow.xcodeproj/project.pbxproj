@@ -12,6 +12,9 @@
 		80D6DA7129FB891E0093C1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6DA7029FB891E0093C1B6 /* Assets.xcassets */; };
 		80D6DA7429FB891E0093C1B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6DA7329FB891E0093C1B6 /* Preview Assets.xcassets */; };
 		80D6DA7B29FB8F4F0093C1B6 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA7A29FB8F4F0093C1B6 /* TimeCounter.swift */; };
+		80D6DA7D29FB95E30093C1B6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA7C29FB95E30093C1B6 /* LoginView.swift */; };
+		80D6DA7F29FB96DC0093C1B6 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA7E29FB96DC0093C1B6 /* UserSettings.swift */; };
+		80D6DA8129FB97C90093C1B6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA8029FB97C90093C1B6 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		80D6DA7029FB891E0093C1B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D6DA7329FB891E0093C1B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80D6DA7A29FB8F4F0093C1B6 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		80D6DA7C29FB95E30093C1B6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		80D6DA7E29FB96DC0093C1B6 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		80D6DA8029FB97C90093C1B6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 			children = (
 				80D6DA6C29FB891A0093C1B6 /* StateAndDataFlowApp.swift */,
 				80D6DA6E29FB891A0093C1B6 /* ContentView.swift */,
+				80D6DA8029FB97C90093C1B6 /* RootView.swift */,
+				80D6DA7C29FB95E30093C1B6 /* LoginView.swift */,
+				80D6DA7E29FB96DC0093C1B6 /* UserSettings.swift */,
 				80D6DA7A29FB8F4F0093C1B6 /* TimeCounter.swift */,
 				80D6DA7029FB891E0093C1B6 /* Assets.xcassets */,
 				80D6DA7229FB891E0093C1B6 /* Preview Content */,
@@ -142,6 +151,9 @@
 			files = (
 				80D6DA7B29FB8F4F0093C1B6 /* TimeCounter.swift in Sources */,
 				80D6DA6F29FB891A0093C1B6 /* ContentView.swift in Sources */,
+				80D6DA8129FB97C90093C1B6 /* RootView.swift in Sources */,
+				80D6DA7D29FB95E30093C1B6 /* LoginView.swift in Sources */,
+				80D6DA7F29FB96DC0093C1B6 /* UserSettings.swift in Sources */,
 				80D6DA6D29FB891A0093C1B6 /* StateAndDataFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
