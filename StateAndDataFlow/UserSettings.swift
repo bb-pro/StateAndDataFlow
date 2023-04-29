@@ -10,4 +10,5 @@ import Foundation
 final class UserSettings: ObservableObject {
     @Published var isLoggedIn = false
     var name = ""
+    var letterCount = 0
 }

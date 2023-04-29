@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var name = ""
+    @State private var name = ""    
     @EnvironmentObject private var userSettings: UserSettings
     
     
     var body: some View {
         VStack {
-            TextField("Enter your name", text: $name)
-                .multilineTextAlignment(.center)
+            HStack {
+                TextField("Enter your name", text: $name)
+                    .multilineTextAlignment(.center)
+                Text(name.count.formatted())
+                    .foregroundColor(name.count < 3 ? Color.red : Color.green)
+                Spacer()
+            }
             Button(action: login) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("Ok")
                 }
+                .disabled(name.count < 3)
+                
             }
         }
     }
@@ -28,10 +35,10 @@ struct LoginView: View {
     private func login() {
         if !name.isEmpty {
             userSettings.name = name
+            userSettings.letterCount = name.count
             userSettings.isLoggedIn.toggle()
         }
     }
-    
 }
 
 struct LoginView_Previews: PreviewProvider {
