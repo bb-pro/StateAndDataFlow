@@ -15,4 +15,10 @@ final class UserSettings: ObservableObject {
     }
 }
 
+struct User: Codable {
+    var name = ""
+    var isLoggedIn = false
+}
+
+
 
