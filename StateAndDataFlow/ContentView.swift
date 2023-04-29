@@ -12,15 +12,17 @@ struct ContentView: View {
     @EnvironmentObject private var userSettings: UserSettings
     var body: some View {
         VStack {
-            Text("HI, \(userSettings.name)")
+            Text("HI, \(userSettings.user.name)")
                 .font(.largeTitle)
                 .padding(.top, 100)
             Text(timer.counter.formatted())
                 .font(.largeTitle)
                 .padding(.top, 100)
-            Spacer()
             ButtonView(timer: timer)
             Spacer()
+            LogOutButtonView {
+                DataManager.shared.clear(userManager: userSettings)
+            }
         }
         .padding()
     }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var name = ""    
+    @State private var name = ""
     @EnvironmentObject private var userSettings: UserSettings
     
     
@@ -34,9 +34,8 @@ struct LoginView: View {
     
     private func login() {
         if !name.isEmpty {
-            userSettings.name = name
-            userSettings.letterCount = name.count
-            userSettings.isLoggedIn.toggle()
+            userSettings.user.name = name
+            userSettings.user.isLoggedIn.toggle()
         }
     }
 }

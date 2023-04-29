@@ -8,7 +8,11 @@
 import Foundation
 
 final class UserSettings: ObservableObject {
-    @Published var isLoggedIn = false
-    var name = ""
-    var letterCount = 0
+    @Published var user = User()
+    
+    init(user: User = User()) {
+        self.user = user
+    }
 }
+
+
