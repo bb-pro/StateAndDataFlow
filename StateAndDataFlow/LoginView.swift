@@ -18,7 +18,7 @@ struct LoginView: View {
                 TextField("Enter your name", text: $name)
                     .multilineTextAlignment(.center)
                 Text(name.count.formatted())
-                    .foregroundColor(name.count < 3 ? Color.red : Color.green)
+                    .foregroundColor(name.count < 3 ? .red : .green)
                     .padding()
                 Spacer()
             }
