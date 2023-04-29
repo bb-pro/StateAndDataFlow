@@ -16,7 +16,6 @@
 		80D6DA7F29FB96DC0093C1B6 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA7E29FB96DC0093C1B6 /* UserSettings.swift */; };
 		80D6DA8129FB97C90093C1B6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA8029FB97C90093C1B6 /* RootView.swift */; };
 		80D6DA8329FCF5610093C1B6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA8229FCF5610093C1B6 /* DataManager.swift */; };
-		80D6DA8729FCFCEA0093C1B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA8629FCFCEA0093C1B6 /* User.swift */; };
 		80D6DA8929FCFF760093C1B6 /* LogOutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DA8829FCFF760093C1B6 /* LogOutButtonView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		80D6DA7E29FB96DC0093C1B6 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		80D6DA8029FB97C90093C1B6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		80D6DA8229FCF5610093C1B6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		80D6DA8629FCFCEA0093C1B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		80D6DA8829FCFF760093C1B6 /* LogOutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +71,6 @@
 				80D6DA7E29FB96DC0093C1B6 /* UserSettings.swift */,
 				80D6DA7A29FB8F4F0093C1B6 /* TimeCounter.swift */,
 				80D6DA8229FCF5610093C1B6 /* DataManager.swift */,
-				80D6DA8629FCFCEA0093C1B6 /* User.swift */,
 				80D6DA7029FB891E0093C1B6 /* Assets.xcassets */,
 				80D6DA7229FB891E0093C1B6 /* Preview Content */,
 			);
@@ -162,7 +159,6 @@
 				80D6DA6F29FB891A0093C1B6 /* ContentView.swift in Sources */,
 				80D6DA8129FB97C90093C1B6 /* RootView.swift in Sources */,
 				80D6DA8329FCF5610093C1B6 /* DataManager.swift in Sources */,
-				80D6DA8729FCFCEA0093C1B6 /* User.swift in Sources */,
 				80D6DA7D29FB95E30093C1B6 /* LoginView.swift in Sources */,
 				80D6DA8929FCFF760093C1B6 /* LogOutButtonView.swift in Sources */,
 				80D6DA7F29FB96DC0093C1B6 /* UserSettings.swift in Sources */,
