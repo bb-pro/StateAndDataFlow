@@ -19,6 +19,7 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                 Text(name.count.formatted())
                     .foregroundColor(name.count < 3 ? Color.red : Color.green)
+                    .padding()
                 Spacer()
             }
             Button(action: login) {
