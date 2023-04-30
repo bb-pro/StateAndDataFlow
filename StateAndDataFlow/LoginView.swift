@@ -34,10 +34,8 @@ struct LoginView: View {
     }
     
     private func login() {
-        if !name.isEmpty {
-            userSettings.user.name = name
-            userSettings.user.isLoggedIn.toggle()
-        }
+        userSettings.user.name = name
+        userSettings.user.isLoggedIn.toggle()
     }
 }
 
